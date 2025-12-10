@@ -11,16 +11,14 @@
 	const run = async () => {
   	  console.log('fetching');
 		 
-    	  const response = await fetch("http://127.0.0.1:8081/", {
+    	  const response = await fetch("http://127.0.0.1:3845/", {
 	    method: "POST",
 	    body: JSON.stringify({ method: "tools/list" }),
 	  });
-	  console.log('fetched');
-	  
-	  const data = await response.json();
-	  console.log('Response data:', data);
+	  console.log('fetched');	
 	};
 	run();
     </script>
   </body>
 </html>
+
